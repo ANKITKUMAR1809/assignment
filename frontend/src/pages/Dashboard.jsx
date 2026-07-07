@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { useToast } from '../context/ToastContext';
 import TaskCard from '../components/TaskCard';
+import Footer from '../components/Footer';
 import {
   LogOut,
   Sun,
@@ -398,6 +399,8 @@ const Dashboard = () => {
           </section>
         )}
       </main>
+
+      <Footer />
 
       {/* Task Create/Edit Modal */}
       {modalOpen && (

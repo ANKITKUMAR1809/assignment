@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { LogIn, Key, Mail, CheckCircle } from 'lucide-react';
+import Footer from '../components/Footer';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -97,6 +98,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+      <Footer isAuthPage={true} />
     </div>
   );
 };
